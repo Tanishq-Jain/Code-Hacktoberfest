@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<string.h>
+
 #define Range 255
 void countSort(char arr[])
 {
@@ -15,8 +14,7 @@ void countSort(char arr[])
     	output[count[arr[i]]-1]=arr[i];
     	--count[arr[i]];
 	}
-	for(i=0;arr[i];++i)
-	arr[i]=output[i];
+
 }
 int main()
 {
