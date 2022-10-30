@@ -1,0 +1,42 @@
+
+struct students
+{
+   char name[50];
+   int roll_no;
+   char branch;
+   int mobile_no;
+   char address[100];
+}s;
+
+{  int i,naitik;
+   FILE *f,*f1;
+  char Naitik[100],c;
+  printf("enter a file name for reading");
+  scanf("%s",Naitik);
+  f=fopen(Naitik,"r");
+  printf("enter a file name for writing");
+  scanf("%s",Naitik);
+  f1=fopen(Naitik,"w");
+
+   {
+      printf("enter a name: ");
+      scanf("%s",&s.name);
+      printf("enter a roll_no: ");
+      scanf("%d",&s.roll_no);
+      printf("enter a branch: ");
+      scanf("%s",&s.branch);
+      printf("enter a mobile_no.: ");
+      scanf("%d",&s.mobile_no);
+      printf("enter a address: ");
+      scanf("%s",&s.address);
+
+
+       printf("%s\n",s.name);
+       printf("%d\n",s.roll_no);
+       printf("%s\n",s.branch);
+       printf("%lf\n",s.mobile_no);
+       printf("%s\n",s.address);
+       fclose(f);
+       fclose(f1);
+       }
+}
