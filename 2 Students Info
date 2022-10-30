@@ -1,4 +1,4 @@
-
+#include<stdio.h>
 struct students
 {
    char name[50];
@@ -7,7 +7,7 @@ struct students
    int mobile_no;
    char address[100];
 }s;
-
+int main()
 {  int i,naitik;
    FILE *f,*f1;
   char Naitik[100],c;
@@ -17,7 +17,7 @@ struct students
   printf("enter a file name for writing");
   scanf("%s",Naitik);
   f1=fopen(Naitik,"w");
-
+   for(i=0;i<2;i++)
    {
       printf("enter a name: ");
       scanf("%s",&s.name);
